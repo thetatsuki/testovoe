@@ -1,0 +1,142 @@
+.card {
+  background: white;
+
+  filter: drop-shadow(0px 0px 20px rgba(0, 0, 0, 0.1));
+  border-radius: 8px;
+
+  &-see__message {
+    position: absolute;
+    padding: 12px 60px;
+
+    &-text {
+      font-style: normal;
+      font-weight: normal;
+      font-size: 14px;
+      line-height: 14px;
+      color: #FFFFFF;
+
+      background: rgba(44, 44, 44, 0.74);
+      padding: 7px 10px;
+      border-radius: 8px;
+    }
+  }
+
+  &.see {
+    background: #FFF6A5;
+
+    .card-info__startInfo-buttons {
+      &-deal, &-send {
+        fill: #00A0AB;
+      }
+    }
+  }
+
+  &-about {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    z-index: 20;
+    right: 10px;
+    bottom: 143px;
+
+    &__like, &__statistics {
+      cursor: pointer;
+      fill: white;
+
+      &:hover {
+        fill: #00A0AB;
+      }
+    }
+
+    a {
+      &:nth-child(1) {
+        padding-bottom: 15px;
+      }
+    }
+  }
+
+  &-image {
+    height: 260px;
+    border-radius: 8px 8px 0 0;
+    background: no-repeat;
+    background-size: 250%;
+    background-position: center;
+  }
+
+
+  &-info {
+    padding: 2px 12px 12px 12px;
+
+    &__startInfo {
+      display: flex;
+      justify-content: space-between;
+
+      &-oldPrice {
+        font-weight: normal;
+        font-size: 14px;
+        line-height: 16px;
+
+        text-decoration: line-through;
+        color: #5A5A5A;
+        padding-bottom: 1px;
+      }
+
+      &-price {
+        font-weight: bold;
+        font-size: 22px;
+        line-height: 25px;
+
+        color: #2C2C2C;
+      }
+
+      &-buttons {
+        padding-top: 2px;
+        padding-right: 5px;
+
+        &-deal {
+          cursor: pointer;
+          margin-right: 15px;
+          fill: #C7C7C7;
+          transition: 0.4s;
+
+          &:hover {
+            fill: #00A0AB;
+            transition: 0.4s;
+          }
+        }
+
+        &-send {
+          cursor: pointer;
+          fill: #C7C7C7;
+          transition: 0.4s;
+
+          &:hover {
+            fill: #00A0AB;
+            transition: 0.4s;
+          }
+        }
+      }
+    }
+
+    &__title {
+      font-weight: 500;
+      font-size: 14px;
+      line-height: 16px;
+
+
+      color: #2C2C2C;
+
+      padding: 8px 0 14px 0;
+    }
+
+    &__addition {
+      display: flex;
+      justify-content: space-between;
+      font-weight: normal;
+      font-size: 12px;
+      line-height: 14px;
+
+      color: #8F8F8F;
+    }
+  }
+}

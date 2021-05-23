@@ -1,0 +1,55 @@
+.board {
+  padding-top: 25px;
+
+  &__title {
+    padding-left: 58px;
+    font-weight: bold;
+    font-size: 22px;
+    line-height: 25px;
+
+    color: #2C2C2C;
+
+    @media(max-width: 500px) {
+      padding-left: 10px;
+    }
+  }
+
+
+  &__cards {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 24px;
+    width: 100%;
+
+    padding-top: 8px;
+
+    @media(max-width: 1200px) {
+      grid-template-columns: repeat(3, 1fr);
+    }
+    @media(max-width: 800px) {
+      grid-template-columns: repeat(2, 1fr);
+    }
+    @media(max-width: 500px) {
+      grid-template-columns: repeat(1, 1fr);
+    }
+  }
+
+  &__see-more {
+    display: flex;
+    justify-content: flex-end;
+    padding: 16px 0 38px 0;
+    cursor: pointer;
+    left: 0;
+
+    &__text {
+      font-style: normal;
+      font-weight: 500;
+      font-size: 14px;
+      line-height: 16px;
+
+      color: #00A0AB;
+
+      padding-right: 5px;
+    }
+  }
+}

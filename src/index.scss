@@ -1,0 +1,19 @@
+body {
+  margin: 0;
+  font-family: 'Ubuntu', sans-serif;
+}
+.container {
+  width: 975px;
+  margin: 0 auto;
+
+  @media(max-width: 1200px) {
+    width: 800px;
+  }
+  @media(max-width: 800px) {
+    width: 500px;
+  }
+  @media(max-width: 500px) {
+    width: 300px;
+  }
+}
+
